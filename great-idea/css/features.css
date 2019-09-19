@@ -1,0 +1,59 @@
+/* Features Showcase */
+.features-showcase .showcase-img img {
+  width: 100%;
+  height: 200px;
+}
+
+.features-showcase .showcase-content {
+  margin: 30px 0;
+}
+
+.features-showcase .showcase-content p {
+  font-size: 1.1rem;
+  line-height: 120%;
+}
+
+/* What We Offer */
+.features {
+  margin: 30px 0;
+}
+
+.features h2 {
+  text-align: center;
+}
+
+.features .features-container {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-evenly;
+}
+
+.features .features-container .features-card {
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #f7f7f7;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.features .features-container .features-card p {
+  padding-bottom: 25px;
+}
+
+.features .features-container .features-card .features-btn {
+  border: 1px solid #333;
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: 1s;
+}
+
+.features .features-container .features-card .features-btn:hover {
+  background: #333;
+  border-color: lightgray;
+  color: #f4f4f4;
+}

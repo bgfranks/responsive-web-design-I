@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 0 50px 0 50px;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* Header  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.header .nav {
+  font-size: 1.2rem;
+}
+
+.header .nav a {
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+  color: gray;
+  transition: 1s;
+}
+
+.header .nav a:first-child {
+  padding-left: 0;
+}
+
+.header .nav a:hover {
+  color: #f3f3f3;
+  background: #666;
+}
+
+/* Showcase section */
+.showcase-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.showcase-container .showcase-text h1 {
+  font-size: 4.2rem;
+  padding-right: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.showcase-container .showcase-text a {
+  border: 1px solid #333;
+  align-self: center;
+  margin-left: 18%;
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: 1s;
+}
+
+.showcase-container .showcase-text a:hover {
+  border-color: lightgray;
+  background: #333;
+  color: lightgray;
+}
+
+.showcase-container .showcase-img {
+  padding-left: 100px;
+}
+
+/* Main Section Top and Bottom*/
+
+.main-section-top,
+.main-section-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.main-section-top .features,
+.main-section-top .about {
+  width: 550px;
+}
+
+/* Main Section Image */
+
+.main-section-img img {
+  width: 100%;
+}
+
+/* Main Section Bottom */
+.main-section-bottom .services,
+.main-section-bottom .product,
+.main-section-bottom .vision {
+  width: 350px;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 30px;
+}
+
+.contact address p {
+  padding: 5px 0;
+}
+
+/* Footer */
+footer {
+  margin: 50px 0 30px 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Tablet View */
+
+@media (max-width: 800px) {
+  /* Navbar */
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .header .nav {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .header .logo-img {
+    margin-top: -30px;
+  }
+
+  /* Showcase */
+  .showcase-container {
+    margin: 50px 0;
+  }
+
+  .showcase-container .showcase-text h1 {
+    padding: 0;
+  }
+
+  .showcase-container .showcase-text .btn {
+    margin: 65px;
+  }
+
+  .showcase-container .showcase-img {
+    display: none;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+  /* Navbar */
+  .header .nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .header .nav a {
+    display: block;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+
+  .header .nav a:first-child {
+    padding-left: 20px;
+    border-top: 1px solid black;
+  }
+
+  /* main section */
+  .main-section-top,
+  .main-section-bottom {
+    flex-direction: column;
+  }
+
+  .main-section-top .features,
+  .main-section-top .about,
+  .main-section-bottom .services,
+  .main-section-bottom .product,
+  .main-section-bottom .vision {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
